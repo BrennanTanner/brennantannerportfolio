@@ -89,11 +89,11 @@ export default function Skills() {
    });
 
    return (
-      <Container sx={{ py: 8 }} maxWidth='lg'>
-         <Typography variant='h3' sx={{ pb: 4 }}>
-            SKILLS
+      <Container sx={{ py: 20 }} maxWidth='lg'>
+         <Typography variant='h3' sx={{ pb: 4 }} data-aos="fade-right" data-aos-delay="150">
+            // SKILLS
          </Typography>
-         <Grid container spacing={4}>
+         <Grid container spacing={4} data-aos="fade-left" data-aos-delay="300">
             {posts}
          </Grid>
       </Container>
