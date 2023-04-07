@@ -1,13 +1,34 @@
 html {
-   height:100%;
+   height: 100%;
 }
 
-body { 
-    min-height:100%;
-    position: relative;
+body {
+   min-height: 100%;
+   position: relative;
 }
 
 canvas {
-   position:absolute;
-   min-height:100%;
+   position: absolute;
+   min-height: 100%;
+}
+
+.print-only {
+   display: none;
+}
+
+@media print {
+   .print-style,
+   .print-style * {
+      padding: 0px !important;
+      margin: 0px !important;
+      color: black !important;
+   }
+   .no-print,
+   .no-print * {
+      display: none !important;
+   }
+   .print-only,
+   .print-only * {
+      display: block !important;
+   }
 }

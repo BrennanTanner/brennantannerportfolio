@@ -1,11 +1,5 @@
 import * as React from 'react';
-import {
-   Container,
-   Typography,
-   Grid,
-   Card,
-   CardMedia,
-} from '@mui/material';
+import { Container, Typography, Grid, Card, CardMedia } from '@mui/material';
 import Adobe from '../assets/Adobe.svg';
 import Babel from '../assets/Babel.svg';
 import Css from '../assets/Css.svg';
@@ -18,7 +12,7 @@ import Reactsvg from '../assets/React.svg';
 import Vite from '../assets/Vite.svg';
 
 export default function Skills() {
-   const PostItems = [
+   const SkillItems = [
       {
          id: 1,
          title: 'HTML',
@@ -71,10 +65,11 @@ export default function Skills() {
       },
    ];
 
-   const posts = PostItems.map((item) => {
+   const skills = SkillItems.map((item) => {
       return (
          <Grid item key={item.id} xs={6} sm={4} md={2}>
             <Card
+               className='no-print'
                sx={{
                   height: '100%',
                   padding: '15px',
@@ -84,17 +79,23 @@ export default function Skills() {
             >
                <CardMedia component='img' image={item.image} alt={item.title} />
             </Card>
+            <Typography className='print-only'>{item.title}</Typography>
          </Grid>
       );
    });
 
    return (
-      <Container sx={{ py: 20 }} maxWidth='lg'>
-         <Typography variant='h3' sx={{ pb: 4 }} data-aos="fade-right" data-aos-delay="150">
-            // SKILLS
+      <Container sx={{ py: 20 }} maxWidth='lg' className='print-style'>
+         <Typography
+            variant='h3'
+            sx={{ pb: 4 }}
+            data-aos='fade-right'
+            data-aos-delay='150'
+         >
+            <span className='no-print'>// </span>SKILLS
          </Typography>
-         <Grid container spacing={4} data-aos="fade-left" data-aos-delay="300">
-            {posts}
+         <Grid container spacing={4} data-aos='fade-left' data-aos-delay='300'>
+            {skills}
          </Grid>
       </Container>
    );

@@ -74,7 +74,7 @@ export default function Projects() {
    const posts = PostItems.map((item) => {
       return (
          <Grid item key={item.id} xs={12} sm={6} md={4}>
-            <Card sx={{ maxWidth: '100%' }}>
+            <Card sx={{ maxWidth: '100%' }} className='no-print'>
                <CardActionArea>
                   <CardMedia
                      component='img'
@@ -97,6 +97,16 @@ export default function Projects() {
         </Button>
       </CardActions>
             </Card>
+            <Typography className='print-only' variant="h5">
+               {item.title}
+            </Typography>
+            <Typography className='print-only'>
+               Project: <i>{item.url}</i>
+            </Typography>
+            <Typography className='print-only'>
+               Github: <i>{item.github}</i>
+            </Typography>
+            <Typography className='print-only'>{item.description}</Typography>
          </Grid>
       );
    });
@@ -104,7 +114,7 @@ export default function Projects() {
    return (
       <Container sx={{ py: 8 }} maxWidth='lg'>
          <Typography variant='h3' sx={{ pb: 4 }} data-aos="fade-right" data-aos-delay="150">
-            // PROJECTS
+         <span className='no-print'>// </span>PROJECTS
          </Typography>
          <Grid container spacing={4} data-aos="fade-left" data-aos-delay="300">
             {posts}

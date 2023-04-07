@@ -10,7 +10,7 @@ import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import '../styles/main.css';
 import Projects from '../components/Projects';
-import Timeline from '../components/Timeline';
+import Experience from '../components/Experience';
 
 const theme = createTheme(dark);
 
@@ -30,6 +30,7 @@ function App() {
    return (
       <ThemeProvider theme={theme} >
          <Particles
+            className='no-print'
             id='tsparticles'
             init={particlesInit}
             loaded={particlesLoaded}
@@ -147,6 +148,7 @@ function App() {
           }}
          />
          <Particles
+            className='no-print'
             id='tsparticles2'
             init={particlesInit}
             loaded={particlesLoaded}
@@ -273,7 +275,7 @@ function App() {
             />
             <Skills />
             <Projects />
-            <Timeline />
+            <Experience />
             <Footer />
          </div>
       </ThemeProvider>

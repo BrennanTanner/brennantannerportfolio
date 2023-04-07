@@ -49,7 +49,7 @@ function DrawerAppBar(props) {
       window !== undefined ? () => window().document.body : undefined;
 
    return (
-      <Box sx={{ display: 'flex' }}>
+      <Box className='no-print' sx={{ display: 'flex' }}>
          <AppBar component='nav' color="transparent" sx={{backdropFilter:"blur(15px)"}}>
             <Toolbar>
                <IconButton
