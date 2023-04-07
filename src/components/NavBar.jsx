@@ -48,6 +48,7 @@ function DrawerAppBar(props) {
    const container =
       window !== undefined ? () => window().document.body : undefined;
 
+      //add some progress or navagation animations
    return (
       <Box className='no-print' sx={{ display: 'flex' }}>
          <AppBar component='nav' color="transparent" sx={{backdropFilter:"blur(15px)"}}>

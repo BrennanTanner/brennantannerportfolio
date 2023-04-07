@@ -10,6 +10,8 @@ import Mongo from '../assets/Mongo.svg';
 import Nodejs from '../assets/Node.svg';
 import Reactsvg from '../assets/React.svg';
 import Vite from '../assets/Vite.svg';
+import Rails from '../assets/Rails.svg';
+import Github from '../assets/Github.svg';
 
 export default function Skills() {
    const SkillItems = [
@@ -62,6 +64,16 @@ export default function Skills() {
          id: 10,
          title: 'Adobe',
          image: Adobe,
+      },
+      {
+         id: 11,
+         title: 'GitHub',
+         image: Github,
+      },
+      {
+         id: 12,
+         title: 'Ruby on Rails',
+         image: Rails,
       },
    ];
 

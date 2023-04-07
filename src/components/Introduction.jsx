@@ -8,7 +8,7 @@ import {
    Avatar,
    Divider
 } from '@mui/material';
-import image from '../assets/space-w-alpha.png';
+import starsImage from '../assets/space-w-alpha.png';
 import pfp from '../assets/pfp-small.png';
 export default function Introduction() {
    return (
@@ -19,7 +19,7 @@ export default function Introduction() {
             bgcolor: 'background.paper',
             pt: 8,
             pb: 10,
-            backgroundImage: `url(${image})`,
+            backgroundImage: `url(${starsImage})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'bottom',
@@ -86,7 +86,7 @@ export default function Introduction() {
                data-aos-delay='3000'
             >
                <Button variant='contained'>MORE</Button>
-               <Button variant='outlined'>PRINT CV</Button>
+               <Button variant='outlined' onClick={() => {window.print()}}>PRINT CV</Button>
             </Stack>
          </Container>
       </Box>

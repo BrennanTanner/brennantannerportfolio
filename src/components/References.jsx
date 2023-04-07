@@ -10,7 +10,7 @@ import {
    CardContent,
    CardMedia,
 } from '@mui/material';
-import Github from '../assets/Github-text.svg';
+import Github from '../assets/Github.svg';
 import pronet from '../assets/pronet.jpg';
 import anna from '../assets/anna.jpg';
 import todo from '../assets/pronet.jpg';
@@ -19,7 +19,7 @@ import Ux from '../assets/UX.jpg';
 import behance from '../assets/behance.jpg';
 
 
-export default function Projects() {
+export default function References() {
    const PostItems = [
       {
          id: 1,
@@ -75,7 +75,7 @@ export default function Projects() {
       return (
          <Grid item key={item.id} xs={12} sm={6} md={4}>
             <Card sx={{ maxWidth: '100%' }} className='no-print'>
-               <CardActionArea href={item.url} target="_blank">
+               <CardActionArea>
                   <CardMedia
                      component='img'
                      height='140'
@@ -92,7 +92,7 @@ export default function Projects() {
                   </CardContent>
                </CardActionArea>
                <CardActions>
-        <Button size="small" variant="outlined" color="primary" href={item.github} target="_blank">
+        <Button size="small" variant="outlined" color="primary">
         <CardMedia component='img' image={Github} alt="GitHub link" sx={{width: '75px', padding: '10px'}} />
         </Button>
       </CardActions>
@@ -112,9 +112,9 @@ export default function Projects() {
    });
 
    return (
-      <Container sx={{ py: 8 }} maxWidth='lg' className='print-style'>
+      <Container sx={{ py: 8 }} maxWidth='lg'>
          <Typography variant='h3' sx={{ pb: 4 }} data-aos="fade-right" data-aos-delay="150">
-         <span className='no-print'>// </span>PROJECTS
+         <span className='no-print'>// </span>References
          </Typography>
          <Grid container spacing={4} data-aos="fade-left" data-aos-delay="300">
             {posts}
