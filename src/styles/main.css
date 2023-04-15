@@ -20,7 +20,7 @@ canvas {
    .print-style,
    .print-style * {
       padding: 0px !important;
-      margin: 0px !important;
+      margin: 5px 0px !important;
       color: black !important;
    }
    .no-print,
@@ -30,5 +30,9 @@ canvas {
    .print-only,
    .print-only * {
       display: block !important;
+   }
+   .print-inline,
+   .print-inline * {
+      display: inline !important;
    }
 }

@@ -20,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-particles": "^2.9.3",
     "react-router-dom": "^6.9.0",
+    "react-transition-group": "^4.4.5",
     "tsparticles": "^2.9.3",
     "tsparticles-engine": "^2.9.3"
   },

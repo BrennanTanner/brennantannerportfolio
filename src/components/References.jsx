@@ -83,7 +83,7 @@ export default function References() {
                      alt={item.title}
                   />
                   <CardContent>
-                     <Typography gutterBottom variant='h5' component='div'>
+                     <Typography gutterBottom variant='h5' >
                         {item.title}
                      </Typography>
                      <Typography variant='body2' color='text.secondary'>

@@ -8,7 +8,10 @@ import {
    CardMedia,
    ToggleButton,
    ToggleButtonGroup,
+   Stack,
+   Grow,
 } from '@mui/material';
+import { TransitionGroup } from 'react-transition-group';
 import Adobe from '../assets/Adobe.svg';
 import Babel from '../assets/Babel.svg';
 import Css from '../assets/Css.svg';
@@ -98,19 +101,22 @@ export default function Skills() {
       },
    ];
 
-   const [category, setCatagory] = useState('frontend');
+   const [category, setCategory] = useState('frontend');
 
-   const handleChange = (event, newCatagory) => {
-      console.log(newCatagory);
-      setCatagory(newCatagory);
+   const handleChange = (event, newCategory) => {
+         setCategory(newCategory);
    };
 
-   const filteredSkills = SkillItems.filter((item => item.tag == category));
-   const skills = filteredSkills.map((item) => {
-         return (
+   const skills = SkillItems.map((item) => {
+      return (
+         <Grow
+            in={category == item.tag}
+            {...(category == item.tag ? { timeout: 1000 } : {})}
+            key={item.id}
+         >
             <Grid item key={item.id} xs={6} sm={4} md={2}>
                <Card
-               data-aos="flip-down"
+                  //data-aos='flip-down'
                   className='no-print'
                   sx={{
                      height: '100%',
@@ -125,13 +131,32 @@ export default function Skills() {
                      alt={item.title}
                   />
                </Card>
-               <Typography className='print-only'>{item.title}</Typography>
             </Grid>
-         );
+         </Grow>
+      );
+   });
+
+   skills.sort((a, b) => {
+      const itemA = a.props.in
+      const itemB = b.props.in
+      if (itemA < itemB) {
+        return 1;
+      }
+      if (itemA > itemB) {
+        return -1;
+      }
+      // items must be equal
+      return 0;
+   })
+
+   const printSkills = SkillItems.map((item) => {
+      return (
+         <Typography key={item.id} className='print-only'>{item.title},&nbsp;</Typography>
+      );
    });
 
    return (
-      <Container sx={{ py: 20, height: '800px'}} className='print-style'>
+      <Container sx={{ py: 20 }} className='print-style'>
          <Typography
             variant='h3'
             sx={{ pb: 4 }}
@@ -142,6 +167,7 @@ export default function Skills() {
          </Typography>
          <ToggleButtonGroup
             color='primary'
+            className='no-print'
             value={category}
             sx={{ pb: 5 }}
             data-aos='fade-left'
@@ -153,10 +179,27 @@ export default function Skills() {
             <ToggleButton value='backend'>Backend</ToggleButton>
             <ToggleButton value='design'>Design</ToggleButton>
          </ToggleButtonGroup>
-         <Grid container spacing={4} data-aos='fade-left' data-aos-delay='300'>
-            {skills}
-            {!category && <div style={{margin: '0 auto'}}><h1 style={{fontSize: '60pt'}} data-aos='flip-up'>🦧</h1><h3  data-aos='fade-down'>Oo oo aa aa</h3></div>}
-         </Grid>
+         <Stack direction='row' spacing={2}>
+            {printSkills}
+         </Stack>
+         <TransitionGroup>
+            <Grid
+               container
+               spacing={4}
+               data-aos='fade-left'
+               data-aos-delay='300'
+            >
+               {skills}
+               {!category && (
+                  <div style={{ margin: '0 30%', position: 'absolute' }}>
+                     <h1 style={{ fontSize: '60pt' }} data-aos='flip-up'>
+                        🦧
+                     </h1>
+                     <h3 data-aos='fade-down'>Oo oo aa aa</h3>
+                  </div>
+               )}
+            </Grid>
+         </TransitionGroup>
       </Container>
    );
 }

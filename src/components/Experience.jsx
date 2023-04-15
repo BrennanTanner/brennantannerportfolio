@@ -23,7 +23,6 @@ export default function Experience() {
             position='alternate'
             sx={{ py: 20 }}
             maxWidth='lg'
-            className='print-style'
          >
             <Typography
                variant='h3'
