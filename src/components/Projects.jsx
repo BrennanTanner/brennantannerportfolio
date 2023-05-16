@@ -17,12 +17,22 @@ import todo from '../assets/pronet.jpg';
 import crm from '../assets/crm.jpg';
 import Ux from '../assets/UX.jpg';
 import behance from '../assets/behance.jpg';
+import beargrease from '../assets/beargrease.png';
 import { Link } from 'react-router-dom';
 
 export default function Projects() {
    const PostItems = [
       {
          id: 1,
+         title: 'Bear Grease E-commerce',
+         description:
+            'My current ongoing project, styling is miniaml right now as i work on functionality. It uses Printify for holding purchasable items, firebase functions to serve as the backend between beargrease and printify, and the frontend is built on React with MUI components. It also uses Firebase authentication for handling user login and authentication.',
+         url: 'https://bear-grease.web.app',
+         github: 'https://github.com/BrennanTanner/bear-grease',
+         image: beargrease,
+      },
+      {
+         id: 2,
          title: 'Proffesional Network App',
          description:
             'A large-scale social-media app focused on networking, much like linked in. The frontend made using React with MUI. The backend is built using Node.js, express, and MongoDB. Mobile view is under construction.',
@@ -32,22 +42,13 @@ export default function Projects() {
          image: pronet,
       },
       {
-         id: 2,
+         id: 3,
          title: 'Anna Abby Studios',
          description:
             'A portfolio site made on commision for an artist. The frontend is built with vanilla HTML, CSS, and JS. The backend is using Node.js, Express, and MongoDB.',
          url: 'https://annaabbystudios.com/',
          github: 'https://github.com/BrennanTanner/annaabbystudios',
          image: anna,
-      },
-      {
-         id: 3,
-         title: 'To-do manager',
-         description:
-            'A project done to learn Ruby on rails and sql databases. It was an interesting project, since I needed to set up a linux enviorment and the essentials of Ruby. Bootstrap for styling.',
-         url: '',
-         github: 'https://github.com/BrennanTanner/todoManager',
-         image: todo,
       },
       {
          id: 4,
