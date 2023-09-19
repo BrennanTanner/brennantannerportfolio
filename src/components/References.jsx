@@ -11,12 +11,7 @@ import {
    CardMedia,
 } from '@mui/material';
 import Github from '../assets/Github.svg';
-import pronet from '../assets/pronet.jpg';
-import anna from '../assets/anna.jpg';
-import todo from '../assets/pronet.jpg';
-import crm from '../assets/crm.jpg';
-import Ux from '../assets/UX.jpg';
-import behance from '../assets/behance.jpg';
+
 
 
 export default function References() {

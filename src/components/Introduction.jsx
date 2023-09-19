@@ -48,7 +48,8 @@ export default function Introduction() {
                      data-aos='fade-down'
                      data-aos-delay='1500'
                   >
-                     BRENNAN TANNER<span className='no-print'>🐢</span>
+                     BRENNAN TANNER
+                     <span className='no-print'>🧑🏼‍🚀</span>
                   </Typography>
                </Grid>
             </Grid>
@@ -76,10 +77,9 @@ export default function Introduction() {
                data-aos='fade-up'
                data-aos-delay='1500'
             >
-               As a true renaissance man of the web, I always focus on being a
-               team-player, a hardworker, and a continual student of web
-               technologies. Some would say that my spirit animal is a Tortoise
-               because I love lettuce and I have a very strong back.
+               Known for my diligence, creative problem-solving, and adventurous spirit. I am a true digital explorer and a constant student of web technologies.<br/><br/>
+               
+               Welcome to my portfolio — a launchpad to explore my work and understand my process for development. 
             </Typography>
             <Stack
                sx={{ pt: 4 }}

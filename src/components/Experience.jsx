@@ -14,16 +14,11 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
 export default function Experience() {
+   //add popover to timeline items
 
-  //add popover to timeline items
-  
    return (
       <Container maxWidth='lg' className='print-style'>
-         <Timeline
-            position='alternate'
-            sx={{ py: 20 }}
-            maxWidth='lg'
-         >
+         <Timeline position='alternate' sx={{ py: 20 }} maxWidth='lg'>
             <Typography
                variant='h3'
                sx={{ pb: 4 }}
@@ -55,12 +50,36 @@ export default function Experience() {
                </TimelineContent>
             </TimelineItem>
             <TimelineItem data-aos='flip-up' data-aos-delay='150'>
-               <TimelineOppositeContent
+               <TimelineOppositeContent sx={{ py: '12px', px: 2 }}>
+                  <Typography color='primary' variant='h6' component='span'>
+                     San Antonio Hospital, CA
+                  </Typography>
+                  <Typography>Web development internship</Typography>
+               </TimelineOppositeContent>
+               <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color='primary'>
+                     <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+               </TimelineSeparator>
+               <TimelineContent
                   sx={{ m: 'auto 0' }}
+                  align='right'
                   variant='body2'
                   color='text.secondary'
                >
                   Summer 2022
+               </TimelineContent>
+            </TimelineItem>
+            <TimelineItem data-aos='flip-up' data-aos-delay='150'>
+               <TimelineOppositeContent
+                  sx={{ m: 'auto 0' }}
+                  align='right'
+                  variant='body2'
+                  color='text.secondary'
+               >
+                  Summer 2023 - Now
                </TimelineOppositeContent>
                <TimelineSeparator>
                   <TimelineConnector />
@@ -71,31 +90,31 @@ export default function Experience() {
                </TimelineSeparator>
                <TimelineContent sx={{ py: '12px', px: 2 }}>
                   <Typography color='primary' variant='h6' component='span'>
-                     San Antonio Hospital, CA
+                     Engineered Labs
                   </Typography>
-                  <Typography>Web development internship</Typography>
+                  <Typography>Manager of E-commerce</Typography>
                </TimelineContent>
             </TimelineItem>
             <TimelineItem data-aos='flip-up' data-aos-delay='150'>
-               <TimelineOppositeContent
-                  sx={{ m: 'auto 0' }}
-                  align='right'
-                  variant='body2'
-                  color='text.secondary'
-               >
-                  We are here
+               <TimelineOppositeContent sx={{ py: '12px', px: 2 }}>
+                  <Typography variant='h3'>🏃</Typography>{' '}
                </TimelineOppositeContent>
                <TimelineSeparator>
                   <TimelineConnector />
                   <TimelineDot color='primary' variant='outlined'></TimelineDot>
                   <TimelineConnector />
                </TimelineSeparator>
-               <TimelineContent sx={{ py: '12px', px: 2 }}>
-                  <Typography variant='h3'>🏃</Typography>{' '}
+               <TimelineContent
+                  sx={{ m: 'auto 0' }}
+                  align='right'
+                  variant='body2'
+                  color='text.secondary'
+               >
+                  We are here
                </TimelineContent>
             </TimelineItem>
             <TimelineItem data-aos='flip-up' data-aos-delay='150'>
-               <TimelineOppositeContent
+            <TimelineOppositeContent
                   sx={{ m: 'auto 0' }}
                   align='right'
                   variant='body2'
@@ -103,7 +122,7 @@ export default function Experience() {
                >
                   December 2023
                </TimelineOppositeContent>
-
+              
                <TimelineSeparator>
                   <TimelineConnector />
                   <TimelineDot color='primary' variant='outlined'>
@@ -122,19 +141,24 @@ export default function Experience() {
                </TimelineContent>
             </TimelineItem>
             <TimelineItem data-aos='flip-up' data-aos-delay='150'>
+            <TimelineOppositeContent sx={{ py: '12px', px: 2 }}>
+                  <Typography color='primary' variant='h6' component='span'>
+                     Begin my career as a Web Developer
+                  </Typography>
+                  <Typography>
+                     You could advertise your company here!
+                  </Typography>
+               </TimelineOppositeContent>
                <TimelineSeparator>
                   <TimelineConnector />
                   <TimelineDot color='primary' variant='outlined'>
                      <ArrowDownIcon />
                   </TimelineDot>
                </TimelineSeparator>
-               <TimelineContent sx={{ py: '12px', px: 2 }}>
-                  <Typography color='primary' variant='h6' component='span'>
-                     Begin my career as a Web Dev
-                  </Typography>
-                  <Typography>
-                     You could advertise your company here!
-                  </Typography>
+               <TimelineContent sx={{ m: 'auto 0' }}
+                  align='right'
+                  variant='body2'
+                  color='text.secondary'>
                </TimelineContent>
             </TimelineItem>
          </Timeline>

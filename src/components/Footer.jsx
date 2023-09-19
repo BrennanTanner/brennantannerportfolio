@@ -29,7 +29,7 @@ export default function Footer() {
             data-aos='fade'
             data-aos-delay='300'
          >
-            There is nothing like sitting around a campfire getting to know someone.<br/>Thanks for stopping by!
+Thanks for stopping by!
          </Typography>
           <Box sx={{pb: 40}}>
 

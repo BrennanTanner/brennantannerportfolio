@@ -8,6 +8,8 @@ import 'aos/dist/aos.css';
 import './styles/main.css';
 import AOS from 'aos';
 import Home from './pages/Home';
+import About from './pages/about';
+import Contact from './pages/contact'
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
