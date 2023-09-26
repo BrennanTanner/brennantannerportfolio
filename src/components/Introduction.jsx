@@ -49,7 +49,7 @@ export default function Introduction() {
                      data-aos-delay='1500'
                   >
                      BRENNAN TANNER
-                     <span className='no-print'>🧑🏼‍🚀</span>
+                     <span className='no-print'></span>
                   </Typography>
                </Grid>
             </Grid>
@@ -77,7 +77,7 @@ export default function Introduction() {
                data-aos='fade-up'
                data-aos-delay='1500'
             >
-               Known for my diligence, creative problem-solving, and adventurous spirit. I am a true digital explorer and a constant student of web technologies.<br/><br/>
+               Known for my diligent work ethic, creative problem-solving, and adventurous spirit. I am a true digital explorer and a constant student of web technologies.<br/><br/>
                
                Welcome to my portfolio — a launchpad to explore my work and understand my process for development. 
             </Typography>
