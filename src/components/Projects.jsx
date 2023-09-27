@@ -11,7 +11,6 @@ import {
    CardMedia,
 } from '@mui/material';
 import Github from '../assets/Github-text.svg';
-import { Link } from 'react-router-dom';
 
 export default function Projects() {
    const PostItems = [
