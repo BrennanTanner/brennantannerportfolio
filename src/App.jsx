@@ -3,9 +3,7 @@ import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import './styles/main.css';
 import AOS from 'aos';
-import Home from './pages/Home';
-import About from './pages/about';
-import Contact from './pages/contact';
+import {Home, About, Contact} from './pages';
 
 function App() {
    const location = useLocation();
