@@ -1,5 +1,5 @@
-import Home from "./Home"
-import About from "./about"
-import Contact from "./contact"
+import Home from "../pages/Home"
+import About from "../pages/about"
+import Contact from "../pages/contact"
 
 export {Home, About, Contact}
