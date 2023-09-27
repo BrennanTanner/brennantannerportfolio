@@ -8,7 +8,7 @@ import '../styles/main.css';
 
 const theme = createTheme(dark);
 
-function App() {
+function About() {
    return (
       <ThemeProvider theme={theme}>
          <CssBaseline />
@@ -20,4 +20,4 @@ function App() {
    );
 }
 
-export default App;
+export default About;

@@ -15,7 +15,7 @@ import References from '../components/References';
 
 const theme = createTheme(dark);
 
-function App() {
+function Home() {
    const particlesInit = useCallback(async (engine) => {
       // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
       // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -188,4 +188,4 @@ function App() {
    );
 }
 
-export default App;
+export default Home;
