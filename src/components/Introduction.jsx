@@ -70,6 +70,7 @@ export default function Introduction() {
                Phone: 208-477-3417
             </Typography>
             <Typography
+            className='no-print'
                variant='h7'
                align='left'
                color='text.secondary'

@@ -16,6 +16,22 @@ export default function Projects() {
    const PostItems = [
       {
          id: 1,
+         title: 'The Beacon App',
+         description:
+            "The beacon is a simple messaging service. Users can add friends, create groups, and do one simple task: light their beacon. This notifies the group that a beacon has been lit, and they can light theirs in response.",
+         url: 'https://www.lightthebeacon.app/',
+         github: 'https://github.com/BrennanTanner/The-Beacon-supabase-nextjs',
+      },
+      {
+         id: 2,
+         title: 'Big Mo\'s Delivery',
+         description:
+            "Big Mo's is a browser based game that I built for a game jam. I built this game in 3 weeks using Javascript tools like Phaser 3. I also updated an abandoned isometric-view plugin, which ate up a lot of my time. But I am proud of how it turned out.",
+         url: 'https://ggmg.itch.io/big-mos-delivery',
+         github: 'https://github.com/BrennanTanner/Mode-Game',
+      },
+      {
+         id: 3,
          title: 'Shotgun Dave',
          description:
             "Shotgun Dave is a simple videogame built in the browser. It uses the phaser engine and custome artwork done by me. This project was my first experience learning game development and was one of the hardest projects I have ever done.",
@@ -23,15 +39,15 @@ export default function Projects() {
          github: 'https://github.com/BrennanTanner/Shotgun-Game',
       },
       {
-         id: 2,
+         id: 4,
          title: 'Bear Grease E-commerce',
          description:
-            'An ongoing project of mine. Styling is miniaml right now as I work on functionality. It uses Printify for holding purchasable items, firebase functions to serve as the backend between beargrease and printify, and the frontend is built on React with MUI components. It also uses Firebase authentication for handling user login and authentication.',
+            '[Broken, Needs Update] \nAn ongoing project of mine. Styling is minimal right now as I work on functionality. It uses the Printify API, Firebase Functions, and React (I am currently planning to remake this project with other tools)',
          url: 'https://bear-grease.web.app',
          github: 'https://github.com/BrennanTanner/bear-grease',
       },
       {
-         id: 3,
+         id: 5,
          title: 'Proffesional Network App',
          description:
             'A large-scale social-media app focused on networking, much like linked in. The frontend made using React with MUI. The backend is built using Node.js, express, and MongoDB. Mobile view is under construction.',
@@ -40,36 +56,12 @@ export default function Projects() {
             'https://github.com/byui-wdd430/professional-network-BrennanTanner',
       },
       {
-         id: 4,
+         id: 6,
          title: 'Anna Abby Studios',
          description:
-            'A portfolio site made on commision for an artist. The frontend is built with vanilla HTML, CSS, and JS. The backend is using Node.js, Express, and MongoDB.',
+            '[Broken, Needs Update] \n A portfolio site made on commision for an artist. This is one of my first big projects in web development. The frontend is built with vanilla HTML, CSS, and JS. The backend is using Node.js, Express, and MongoDB.',
          url: 'https://annaabbystudios.com/',
          github: 'https://github.com/BrennanTanner/annaabbystudios',
-      },
-      {
-         id: 5,
-         title: 'CRM Solutions',
-         description:
-            'A simple static site made on commision for a small customer relations company. It is a brochure with an email function. ',
-         url: '',
-         github: 'https://github.com/BrennanTanner/CRM',
-      },
-      {
-         id: 6,
-         title: 'UX Case Study',
-         description:
-            'Here is a case study presentation from a UX study done for the family search app using Figma. This UX study is only a proof of concept.',
-         url: 'https://brennantanner.github.io/brennantanner/ART337R/Project3/',
-         github: 'https://brennantanner.github.io/brennantanner/',
-      },
-      {
-         id: 7,
-         title: 'Behance Portfolio',
-         description:
-            'My behance portfolio with graphic design projects if you are interested. New graphic design projects will be posted on this site.',
-         url: 'https://www.behance.net/brennantanner',
-         github: '',
       },
    ];
 

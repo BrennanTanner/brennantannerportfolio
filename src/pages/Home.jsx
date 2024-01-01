@@ -12,6 +12,7 @@ import '../styles/main.css';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import References from '../components/References';
+import { Box } from '@mui/material';
 
 const theme = createTheme(dark);
 
@@ -172,18 +173,20 @@ function Home() {
             }}
          />
          <CssBaseline />
-         <div className='App'>
+         <Box className='App'>
             <NavBar />
             <Intro
                sx={{
                   ml: 0,
                }}
             />
+            <Box className='sections'>
             <Skills />
             <Projects />
             <Experience />
+            </Box>
             <Footer />
-         </div>
+         </Box>
       </ThemeProvider>
    );
 }

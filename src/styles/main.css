@@ -16,6 +16,8 @@ canvas {
    display: none;
 }
 
+@page { size: auto; margin-top: 0mm; margin-bottom: 0mm; }
+
 @media print {
    .print-style,
    .print-style * {
@@ -34,5 +36,15 @@ canvas {
    .print-inline,
    .print-inline * {
       display: inline !important;
+   }
+   .sections {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   .experiences {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      
    }
 }
