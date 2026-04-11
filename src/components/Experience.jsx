@@ -81,7 +81,7 @@ export default function Experience() {
                      variant='body2'
                      color='text.secondary'
                   >
-                     Summer 2023 - Now
+                     Summer 2023 - March 2024
                   </TimelineOppositeContent>
                   <TimelineSeparator>
                      <TimelineConnector />
@@ -97,6 +97,30 @@ export default function Experience() {
                      <Typography>
                         Web developer & Manager of E-commerce
                      </Typography>
+                  </TimelineContent>
+               </TimelineItem>
+
+               <TimelineItem data-aos='flip-up' data-aos-delay='150'>
+                  <TimelineOppositeContent sx={{ py: '12px', px: 2 }}>
+                     <Typography color='primary' variant='h6' component='span'>
+                        Riverbend Meats LLC
+                     </Typography>
+                     <Typography>Junior Software Developer</Typography>
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                     <TimelineConnector />
+                     <TimelineDot color='primary' sx={{ fontSize: '1.2rem', p: '4px' }}>
+                        <span className='no-print' role='img' aria-label='cow'>🐄</span>
+                     </TimelineDot>
+                     <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent
+                     sx={{ m: 'auto 0' }}
+                     align='right'
+                     variant='body2'
+                     color='text.secondary'
+                  >
+                     March 2024 - Now
                   </TimelineContent>
                </TimelineItem>
 
