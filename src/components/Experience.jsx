@@ -9,7 +9,6 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import BusIcon from '@mui/icons-material/DirectionsBus';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import SchoolIcon from '@mui/icons-material/School';
-import ArrowDownIcon from '@mui/icons-material/ArrowDownward';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
@@ -100,30 +99,6 @@ export default function Experience() {
                   </TimelineContent>
                </TimelineItem>
 
-               <TimelineItem data-aos='flip-up' data-aos-delay='150'>
-                  <TimelineOppositeContent sx={{ py: '12px', px: 2 }}>
-                     <Typography color='primary' variant='h6' component='span'>
-                        Riverbend Meats LLC
-                     </Typography>
-                     <Typography>Junior Software Developer</Typography>
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                     <TimelineConnector />
-                     <TimelineDot color='primary' sx={{ fontSize: '1.2rem', p: '4px' }}>
-                        <span className='no-print' role='img' aria-label='cow'>🐄</span>
-                     </TimelineDot>
-                     <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent
-                     sx={{ m: 'auto 0' }}
-                     align='right'
-                     variant='body2'
-                     color='text.secondary'
-                  >
-                     March 2024 - Now
-                  </TimelineContent>
-               </TimelineItem>
-
                <TimelineItem
                   className='no-print'
                   data-aos='flip-up'
@@ -134,7 +109,7 @@ export default function Experience() {
                         Gradute BYU-I
                      </Typography>
                      <Typography>
-                        Bachelors of Computer Information Techonology
+                        Bachelor's of Computer Information Technology
                         <br /> Majoring in Web Design and Development
                      </Typography>
                   </TimelineOppositeContent>
@@ -160,51 +135,27 @@ export default function Experience() {
                   data-aos='flip-up'
                   data-aos-delay='150'
                >
-                  <TimelineOppositeContent
-                     sx={{ m: 'auto 0' }}
-                     align='right'
-                     variant='body2'
-                     color='text.secondary'
-                  >
-                     We are here
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                     <TimelineConnector />
-                     <TimelineDot
-                        color='primary'
-                        variant='outlined'
-                     ></TimelineDot>
-                     <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: '12px', px: 2 }}>
-                     <Typography variant='h3'>🏃</Typography>{' '}
-                  </TimelineContent>
-               </TimelineItem>
-               <TimelineItem
-                  className='no-print'
-                  data-aos='flip-up'
-                  data-aos-delay='150'
-               >
                   <TimelineOppositeContent sx={{ py: '12px', px: 2 }}>
                      <Typography color='primary' variant='h6' component='span'>
-                        Begin my career as a Web Developer
+                        Riverbend Meats LLC
                      </Typography>
-                     <Typography>
-                        You could advertise your company here!
-                     </Typography>
+                     <Typography>Junior Software Developer</Typography>
                   </TimelineOppositeContent>
                   <TimelineSeparator>
                      <TimelineConnector />
-                     <TimelineDot color='primary' variant='outlined'>
-                        <ArrowDownIcon className='no-print' />
+                     <TimelineDot color='primary' sx={{ fontSize: '1.2rem', p: '4px' }}>
+                        <span className='no-print' role='img' aria-label='cow'>🐄</span>
                      </TimelineDot>
+                     <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent
                      sx={{ m: 'auto 0' }}
                      align='right'
                      variant='body2'
                      color='text.secondary'
-                  ></TimelineContent>
+                  >
+                     March 2024 - Now
+                  </TimelineContent>
                </TimelineItem>
             </Box>
          </Timeline>
