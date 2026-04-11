@@ -17,10 +17,16 @@ import DotNet from '../assets/DotNet.svg';
 import SqlServer from '../assets/SqlServer.svg';
 import Js from '../assets/Js.svg';
 import Shopify from '../assets/Shopify.svg';
-import IIS from '../assets/IIS.svg';
 import Radzen from '../assets/Radzen.svg';
 import Reactsvg from '../assets/React.svg';
 import Nodejs from '../assets/Node.svg';
+import Blazor from '../assets/Blazor.svg';
+import Css from '../assets/Css.svg';
+import Html from '../assets/Html.svg';
+import Godot from '../assets/Godot.svg';
+import GraphQL from '../assets/GraphQL.svg';
+import TypeScript from '../assets/TypeScript.svg';
+import Git from '../assets/Git.svg';
 
 export default function Skills() {
    const SkillItems = [
@@ -70,6 +76,48 @@ export default function Skills() {
          id: 8,
          title: 'Node.js',
          image: Nodejs,
+         tag: 'backend',
+      },
+      {
+         id: 9,
+         title: 'Blazor',
+         image: Blazor,
+         tag: 'frontend',
+      },
+      {
+         id: 10,
+         title: 'CSS',
+         image: Css,
+         tag: 'frontend',
+      },
+      {
+         id: 11,
+         title: 'HTML',
+         image: Html,
+         tag: 'frontend',
+      },
+      {
+         id: 12,
+         title: 'Godot',
+         image: Godot,
+         tag: 'frontend',
+      },
+      {
+         id: 13,
+         title: 'GraphQL',
+         image: GraphQL,
+         tag: 'backend',
+      },
+      {
+         id: 14,
+         title: 'TypeScript',
+         image: TypeScript,
+         tag: 'frontend',
+      },
+      {
+         id: 15,
+         title: 'Git',
+         image: Git,
          tag: 'backend',
       },
    ];
