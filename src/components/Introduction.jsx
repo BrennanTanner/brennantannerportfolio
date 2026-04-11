@@ -61,7 +61,7 @@ export default function Introduction() {
                data-aos-delay='1500'
             >
                <br /> <span className='no-print'>&#123;</span> FULL STACK
-               DEVELOPER, UI/UX DESIGNER{' '}
+               DEVELOPER{' '}
                <span className='no-print'>&#125;</span>
             </Typography>
             <Typography variant='subtitle1' className='print-only'>
