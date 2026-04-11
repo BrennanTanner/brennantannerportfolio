@@ -12,91 +12,64 @@ import {
    Grow,
 } from '@mui/material';
 import { TransitionGroup } from 'react-transition-group';
-import Adobe from '../assets/Adobe.svg';
-import Babel from '../assets/Babel.svg';
-import Css from '../assets/Css.svg';
-import Figma from '../assets/Figma.svg';
-import Html5 from '../assets/Html.svg';
+import CSharp from '../assets/CSharp.svg';
+import DotNet from '../assets/DotNet.svg';
+import SqlServer from '../assets/SqlServer.svg';
 import Js from '../assets/Js.svg';
-import Mongo from '../assets/Mongo.svg';
-import Nodejs from '../assets/Node.svg';
+import Shopify from '../assets/Shopify.svg';
+import IIS from '../assets/IIS.svg';
+import Radzen from '../assets/Radzen.svg';
 import Reactsvg from '../assets/React.svg';
-import Vite from '../assets/Vite.svg';
-import Rails from '../assets/Rails.svg';
-import Github from '../assets/Github.svg';
+import Nodejs from '../assets/Node.svg';
 
 export default function Skills() {
    const SkillItems = [
       {
          id: 1,
-         title: 'HTML',
-         image: Html5,
-         tag: 'frontend',
+         title: 'C#',
+         image: CSharp,
+         tag: 'backend',
       },
       {
          id: 2,
-         title: 'CSS',
-         image: Css,
-         tag: 'frontend',
+         title: '.NET',
+         image: DotNet,
+         tag: 'backend',
       },
       {
          id: 3,
-         title: 'Js',
+         title: 'SQL Server',
+         image: SqlServer,
+         tag: 'backend',
+      },
+      {
+         id: 4,
+         title: 'JavaScript',
          image: Js,
          tag: 'frontend',
       },
       {
-         id: 4,
+         id: 5,
+         title: 'Shopify',
+         image: Shopify,
+         tag: 'frontend',
+      },
+      {
+         id: 6,
+         title: 'Radzen',
+         image: Radzen,
+         tag: 'frontend',
+      },
+      {
+         id: 7,
          title: 'React',
          image: Reactsvg,
          tag: 'frontend',
       },
       {
-         id: 5,
-         title: 'Vite',
-         image: Vite,
-         tag: 'frontend',
-      },
-      {
-         id: 6,
-         title: 'Babel',
-         image: Babel,
-         tag: 'frontend',
-      },
-      {
-         id: 7,
-         title: 'MongoDB',
-         image: Mongo,
-         tag: 'backend',
-      },
-      {
          id: 8,
          title: 'Node.js',
          image: Nodejs,
-         tag: 'backend',
-      },
-      {
-         id: 9,
-         title: 'Figma',
-         image: Figma,
-         tag: 'design',
-      },
-      {
-         id: 10,
-         title: 'Adobe',
-         image: Adobe,
-         tag: 'design',
-      },
-      {
-         id: 11,
-         title: 'GitHub',
-         image: Github,
-         tag: 'frontend',
-      },
-      {
-         id: 12,
-         title: 'Ruby on Rails',
-         image: Rails,
          tag: 'backend',
       },
    ];
@@ -177,7 +150,6 @@ export default function Skills() {
          >
             <ToggleButton value='frontend'>Frontend</ToggleButton>
             <ToggleButton value='backend'>Backend</ToggleButton>
-            <ToggleButton value='design'>Design</ToggleButton>
          </ToggleButtonGroup>
          <Stack direction='row' spacing={2}>
             {printSkills}
